@@ -1,9 +1,9 @@
 ﻿/*-------------------------------------------------------------------------
 
- TabControlのtab非表示版
+ TabControl의 tab 숨김 버
 
- コードは以下のTipsから持ってきています
- .NET Framework2.0用に多少調整している程度
+ 코드는 아래 Tips에서 가져왔습니다
+ .NET Framework 2.0용으로 약간 조정한 정도
 
  Mick Doherty's .net Tips and Tricks
  http://dotnetrix.co.uk/default.htm
@@ -266,8 +266,8 @@ namespace Design
 
 		public PanelManagerDesigner():base()
 		{
-			DesignerVerb verb1 = new DesignerVerb("ページの追加", new EventHandler(OnAddPanel));
-			DesignerVerb verb2 = new DesignerVerb("ページの削除", new EventHandler(OnRemovePanel));
+			DesignerVerb verb1 = new DesignerVerb("페이지 추가", new EventHandler(OnAddPanel));
+			DesignerVerb verb2 = new DesignerVerb("페이지 삭제", new EventHandler(OnRemovePanel));
 			m_verbs.AddRange(new DesignerVerb[] {verb1, verb2});
 		}
 
@@ -414,7 +414,7 @@ namespace Design
 
 		public ManagedPanelDesigner():base()
 		{
-			DesignerVerb verb1 = new DesignerVerb("PanelManagerを選択", new EventHandler(OnSelectManager));
+			DesignerVerb verb1 = new DesignerVerb("PanelManager를 선택", new EventHandler(OnSelectManager));
 			m_verbs.Add(verb1);
 		}
 
